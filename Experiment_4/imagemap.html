@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+</head>
+<body>
+    <h1>Image Map Example</h1>
+    <img src="sky.jpg" alt="Example Image" usemap="#image-map">
+
+    <map name="image-map">
+        <!-- Rectangle -->
+        <area shape="rect" coords="34,44,270,350" alt="Rectangle" href="page1.html">
+        <!-- Circle -->
+        <area shape="circle" coords="500,150,75" alt="Circle" href="page2.html">
+        <!-- Polygon -->
+        <area shape="poly" coords="289,60,329,20,369,60,329,100" alt="Polygon" href="page3.html">
+    </map>
+</body>
+</html>

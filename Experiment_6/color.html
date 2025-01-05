@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Background Colors</title> 
+</head> 
+<body> 
+<h1 align = "center"> 7 Different & visibly distinct background colors(Page 1/Color.html)</h1> 
+<form name = "form1"> 
+<center> 
+<input type = "button"  value = " Change Colors" onMouseOver= "f1()"> 
+<input type = "button" value = " Message Display" onClick= "msg()"> 
+</center> 
+</form> 
+</body> 
+<script type = "text/javascript"> 
+function f1() 
+{ 
+document.bgColor="red"; 
+window.setTimeout("f2()",1500); 
+} 
+function f2() 
+{ 
+document.bgColor="green"; 
+window.setTimeout("f3()",1500); 
+} 
+function f3() 
+{ 
+document.bgColor="pink"; 
+window.setTimeout("f4()",1500); 
+} 
+function f4() 
+{ 
+document.bgColor="orange"; 
+window.setTimeout("f5()",1500); 
+} 
+function f5() 
+{ 
+document.bgColor="skyblue"; 
+window.setTimeout("f6()",1500); 
+} 
+function f6() 
+{ 
+document.bgColor="violet"; 
+window.setTimeout("f7()",1500); 
+} 
+function f7() 
+{ 
+document.bgColor="aqua"; 
+window.setTimeout("f1()",1500); 
+} 
+function msg() 
+{ 
+window.status = " Display of 7 different colors"; 
+} 
+</script> 
+</html> 

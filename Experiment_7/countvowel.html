@@ -1,0 +1,44 @@
+
+<!Doctype html> 
+<html> 
+<head> 
+<title> String Functions</title> 
+</head> 
+<body> 
+<center>
+<form name = form1> 
+Enter name string: <input type = "text" name ="t1"> <br><br> 
+<input type = "button" value = "Count Vowels" onClick=calc()> 
+</form> 
+</center>
+</body> 
+<script type = "text/javascript"> 
+function calc() 
+{ 
+var s, i , ch , cnt ; 
+ 
+/* usage of variables 
+s = Stores actual string submitted by user. 
+i = index of characters/letters/alphabets in string 
+ch = to get character stored at index i 
+cnt = maintain count of vowels in given string . initial value of cnt = 0; 
+ 
+e.g string given is s = "ABe" 
+ 
+for A …….     i = 0 , ch = A, cnt = 1 
+for B -----------= 1, ch= B, cnt = 1 
+for e -------- i = 2 , ch = e , cnt =2 */ 
+ 
+cnt = 0; 
+s = form1.t1.value; 
+for(i=0;i<=s.length;i++) 
+{ 
+ch=s.charAt(i); 
+if(ch =="A"||ch=="a"||ch=="E"||ch=="e"||ch=="I"||ch=="i"||ch=="O"||ch=="o"||ch=="U"||ch=="u") 
+cnt++; 
+} 
+ 
+alert("No. of Vowels in Given String are :" +cnt); 
+} 
+</script> 
+</html> 

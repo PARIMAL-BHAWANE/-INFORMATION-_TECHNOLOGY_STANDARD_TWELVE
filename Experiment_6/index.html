@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Interaction</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="hoverButton">Hover over me</button>
+    <button id="clickButton">Click me</button>
+
+    <script>
+        const colors = ["red", "blue", "green", "yellow", "pink", "orange", "purple"];
+        let colorIndex = 0;
+        const hoverButton = document.getElementById("hoverButton");
+        const clickButton = document.getElementById("clickButton");
+
+        hoverButton.addEventListener("mouseover", () => {
+            setInterval(() => {
+                document.body.style.backgroundColor = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 1000); // Change the interval (in milliseconds) as needed
+        });
+
+        clickButton.addEventListener("click", () => {
+            window.status = "Button clicked!";
+        });
+    </script>
+</body>
+</html>
